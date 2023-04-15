@@ -13,8 +13,35 @@ $border-width: 2px;
 
 $light: #e9ecef;
 
-h2 {
+// h2 {
+//     color: $primary;
+// }
+
+// custom hover for nav, use this instead of bootstrap .nav-link
+.custom-link {
+    color: $secondary;
+    text-decoration: none;
+    padding: .4rem;
+    display: block;
+}
+
+.custom-link:hover {
     color: $primary;
+}
+
+@media (min-width: 992px) {
+    .custom-link {
+        color: $primary;
+        box-shadow: inset 0 0 0 0 $primary;
+        padding: 0 .25rem;
+        margin: 0 -.25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    }
+    
+    .custom-link:hover {
+        color: white;
+        box-shadow: inset 200px 0 0 0 $primary;
+    }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

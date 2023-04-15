@@ -4,7 +4,7 @@ import "./homepage.css";
 const Homepage = () => {
     return (
         <>
-            <div className="bgHero px-4 py-5 text-center">
+            <div className="bg-hero px-4 py-5 text-center">
                 <div className="py-5">
                     <h1 className="display-5 fw-bold text-white">Dark color hero</h1>
                     <div className="col-lg-6 mx-auto">

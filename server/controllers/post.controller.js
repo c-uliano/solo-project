@@ -2,7 +2,7 @@ const Post = require("../models/post.model");
 
 // * GET ALL
 module.exports.findAll = (req, res) => {
-    Post.find()
+    Post.find().sort({date: -1, createdAt: -1})
         .then(all => res.json(all))
         .catch(err => res.json({ message: "Something went wrong", error: err }));
 }

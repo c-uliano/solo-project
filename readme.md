@@ -33,18 +33,33 @@ The site will have 3 pages
 
 ### Notes
 frontend pages:
-/
-/about
-/post
-/post/:id
-/post/create
-/post/edit/:id
+- ~~/~~
+- ~~/about~~
+- ~~/post~~
+- ~~/post/:id~~
+- ~~/post/create~~
+- ~~/post/edit/:id~~
 
 components:
-homepage
-about
-displayAll
-displayOne
-createOne
-editOne
-nav/header - header with nav subcomponent?
+- ~~homepage~~
+- ~~about~~
+- ~~displayAll~~
+- ~~displayOne~~
+- ~~createOne~~
+- ~~editOne~~
+- ~~nav/header~~
+
+### To Do
+- favicon
+- fix head description, still says react app
+- update hero images on all pages
+- create footer component
+- content to homepage and style it up
+- content to about and style it up
+- style up list page
+- style up detail page
+- ~~can delete the homepage.css stylesheets, don't need it since everything is now in the hero component~~
+- ~~set up component for hero image, use on every page~~
+- ~~update the navigate on CreateOne, so it'll go to post's detail page~~
+- ~~posts by most recent on top, backend in controller file I think~~
+- ~~update hero component, new props to add in button~~

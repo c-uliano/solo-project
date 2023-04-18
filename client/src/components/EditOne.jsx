@@ -84,10 +84,11 @@ const EditOne = () => {
 
     return (
         <>
-            {/* <Hero 
-                image={heroImg}
+            <Hero 
+                image={"/assets/general-bg.png"}
                 h1Header={"Edit post"}
-            /> */}
+                height={"30vh"}
+            />
             <div className='container mt-4 mb-4'>
                 <div className='card w-50 mx-auto m-4 p-4 rounded'>
                     <form action="" onSubmit={onSubmitHandler}>

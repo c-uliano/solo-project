@@ -36,14 +36,14 @@ const DisplayAll = () => {
                 link={"/post/create"}
                 btnName={"Create New Post"}
             />
-            <div className='container mt-4 mb-4'>
+            <div className='w-50 mx-auto mt-4 mb-4'>
                 <div>
                     {list.map((post) => {
                         let formattedDate = new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"});
                         return (
                             <div className="row align-items-center border-bottom mb-4" key={post._id}>
                                 <div className="col-md">
-                                    <h3><Link to={`/post/${post._id}`}>{post.title}</Link></h3>
+                                    <h3><Link className="hover_underline" to={`/post/${post._id}`}>{post.title}</Link></h3>
                                     <p><i>{formattedDate}</i></p>
                                 </div>
                                 <div className="col-md-auto">

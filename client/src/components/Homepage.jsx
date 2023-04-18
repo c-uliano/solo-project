@@ -95,7 +95,7 @@ const Homepage = () => {
                     </div>
                 </section>
 
-                <h2 class="mb-4"><span class="small text-black-50">The Fun Stuff,</span><br />My Portfolio</h2>
+                <h2 className="mb-4"><span className="small text-black-50">The Fun Stuff,</span><br />My Portfolio</h2>
                 <Portfolio />
             </div>
         </>

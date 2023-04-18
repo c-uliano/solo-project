@@ -38,7 +38,7 @@ const DisplayOne = () => {
                 image={"/assets/hero.png"}
                 h1Header={`${post.title}`}
             />
-            <div className="container mt-4 mb-4">
+            <div className="w-50 mx-auto mt-4 mb-4">
                 <div>
                     <p><i>{new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"})}</i></p>
                     <p>{post.content}</p>

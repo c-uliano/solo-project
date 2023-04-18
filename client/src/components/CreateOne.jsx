@@ -78,6 +78,7 @@ const CreateOne = () => {
             <Hero 
                 image={"/assets/hero.png"}
                 h1Header={"Create a new post"}
+                height={"30vh"}
             />
             <div className='container mt-4 mb-4'>
                 <div className='card w-50 mx-auto m-4 p-4 rounded'>

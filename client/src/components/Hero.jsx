@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const hero = (props) => {
+const Hero = (props) => {
     const bgHero = {
         position: "relative",
         backgroundColor: "#000000",
         mixBlendMode: "multiply",
-        height: "50vh",
+        // height: "50vh",
+        height: `${props.height}`,
         display: "flex",
         alignItems: "center",
         justifyContent: "center"
@@ -45,4 +46,8 @@ const hero = (props) => {
     )
 }
 
-export default hero;
+Hero.defaultProps = {
+    height: '50vh'
+};
+
+export default Hero;

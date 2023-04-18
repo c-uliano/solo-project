@@ -14,9 +14,9 @@ const Portfolio = () => {
     return (
         <>
             <div className="row">
-                {portfolioList.map((item) => {
+                {portfolioList.map((item, index) => {
                     return (
-                        <div className="col-lg-4">
+                        <div key={index} className="col-lg-4">
                             {/* color class would go in <figure>, but not using it here */}
                             <figure className="photo">
                                 <img src={`${item[0]}`} />

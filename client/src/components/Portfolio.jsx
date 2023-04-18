@@ -4,7 +4,7 @@ import "./portfolio.css";
 const Portfolio = () => {
     var portfolioList = [
         ["/assets/amst.jpg", "AMST Branding", "https://www.behance.net/gallery/96881659/2019-Updated-Logo-Branding-for-Alt-Media-Studios", "red"],
-        ["/assets/matt.jpg", "Matt Hirsch", "https://www.behance.net/gallery/96880097/Logo-Design-Branding-For-Salesman-Matt-Hirsch", "blue"],
+        ["/assets/matt.jpg", "Hirsch Branding", "https://www.behance.net/gallery/96880097/Logo-Design-Branding-For-Salesman-Matt-Hirsch", "blue"],
         ["/assets/pmc.jpg", "PMC Branding", "https://www.behance.net/gallery/152435567/Protect-My-Collection-Logo-Branding", "red"],
         ["/assets/alce.jpg", "Alice Framework", "https://c-uliano.github.io/alce/", "blue"],
         ["/assets/sigsq.jpg", "Website Design", "https://www.behance.net/gallery/152177495/Website-Design-for-Signature-Square", "red"],

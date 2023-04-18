@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
     return (
-        <div>
+        <div className='full_height'>
             <HeaderNav />
             
             <Routes>
@@ -23,6 +23,7 @@ function App() {
                 <Route path="/post/edit/:id" element={<EditOne />} />
                 <Route />
             </Routes>
+            
             <Footer />
         </div>
     );

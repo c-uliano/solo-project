@@ -7,9 +7,10 @@ const About = () => {
     return (
         <>
             <Hero 
-                image={"/assets/hero.png"} 
+                image={"/assets/general-bg.png"} 
                 h1Header={"About Me"} 
                 height={"30vh"}
+                bgPosition={"center 75%"}
             />
             <div className='container mt-4 mb-4'>
                 <div className="row flex-lg-row-reverse align-items-center py-5">

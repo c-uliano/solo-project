@@ -61,7 +61,7 @@ const Homepage = () => {
                             <h2 className="mb-4"><span className="small text-black-50">This Is My</span><br />Education</h2>
                             <div className="row">
                                 <div className="col-sm-3">
-                                    <p>from Oct 2022<br />to April 2023</p>
+                                    <p><em>from Oct 2022<br />to April 2023</em></p>
                                 </div>
                                 <div className="col-sm">
                                     <h5>Coding Dojo</h5>
@@ -71,7 +71,7 @@ const Homepage = () => {
                             <hr />
                             <div className="row">
                                 <div className="col-sm-3">
-                                    <p>from 2012<br />to 2013</p>
+                                    <p><em>from 2012<br />to 2013</em></p>
                                 </div>
                                 <div className="col-sm">
                                     <h5>Cleveland State University, Cleveland Ohio</h5>
@@ -81,7 +81,7 @@ const Homepage = () => {
                             <hr />
                             <div className="row">
                                 <div className="col-sm-3">
-                                    <p>from 2005<br />to 2007</p>
+                                    <p><em>from 2005<br />to 2007</em></p>
                                 </div>
                                 <div className="col-sm">
                                     <h5>Lorain County Community College, Elyria Ohio</h5>

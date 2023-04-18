@@ -7,7 +7,12 @@ body {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700 !important;
-  color: #720E32;
+}
+
+.full_height {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /*!
@@ -103,6 +108,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   --bs-tertiary-color-rgb: 33, 37, 41;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
+  --bs-heading-color: #720E32;
   --bs-link-color: #720E32;
   --bs-link-color-rgb: 114, 14, 50;
   --bs-link-decoration: underline;
@@ -5839,7 +5845,7 @@ textarea.form-control-lg {
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
   --bs-popover-header-font-size: 1rem;
-  --bs-popover-header-color: ;
+  --bs-popover-header-color: #720E32;
   --bs-popover-header-bg: var(--bs-secondary-bg);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 1rem;
@@ -12061,4 +12067,10 @@ a.hover_underline::after {
 a.hover_underline:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media (max-width: 992px) {
+  .w-50 {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=App.css.map */

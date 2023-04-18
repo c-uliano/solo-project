@@ -30,14 +30,15 @@ const DisplayAll = () => {
     return (
         <>
             <Hero 
-                image={"/assets/hero.png"}
+                image={"/assets/post-hero.png"}
                 h1Header={"The Latest News"}
                 content={"Keep up-to-date on what I'm up to these days"}
                 link={"/post/create"}
                 btnName={"Create New Post"}
+                bgPosition={"center 44%"}
             />
-            <div className='w-50 mx-auto mt-4 mb-4'>
-                <div>
+            <div className='container mt-4 mb-4'>
+                <div className="w-50 mx-auto">
                     {list.map((post) => {
                         let formattedDate = new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"});
                         return (

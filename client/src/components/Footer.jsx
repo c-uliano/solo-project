@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer = () => {
     return (
         <>
-            <div className="container">
+            <div className="container mt-auto">
                 <footer className="row justify-content-between align-items-center py-3 my-4">
                     <div className="col-md-4 d-flex align-items-center">
                         <span className="mb-3 mb-md-0 text-muted">© 2023 Coletta Uliano</span>

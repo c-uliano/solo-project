@@ -21,12 +21,20 @@ $border-width: 2px;
 
 $light: #e9ecef;
 
+$headings-color: $primary;
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700 !important;
-    color: $primary;
+}
+
+.full_height {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+// ! this import isn't working, using cdn instead
 // @import "../node_modules/bootstrap-icons/font/bootstrap-icons";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
@@ -56,4 +64,10 @@ a.hover_underline::after {
 a.hover_underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media (max-width: 992px) {
+    .w-50 {
+        width: 100% !important;
+    }
 }

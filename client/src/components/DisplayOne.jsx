@@ -35,16 +35,22 @@ const DisplayOne = () => {
     return (
         <>
             <Hero 
-                image={"/assets/hero.png"}
+                image={"/assets/general-bg.png"}
                 h1Header={`${post.title}`}
+                height={"30vh"}
             />
-            <div className="w-50 mx-auto mt-4 mb-4">
-                <div>
-                    <p><i>{new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"})}</i></p>
-                    <p>{post.content}</p>
+            <div className='container mt-4 mb-4'>
+                <div className="w-50 mx-auto card rounded p-4">
+                    <div className='mb-4'>
+                        <p><i>{new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"})}</i></p>
+                        <p>{post.content}</p>
+                    </div>
+                    <p>
+                        <Link to="/post" className='btn btn-secondary me-3'>View All Posts</Link>
+                        <Link to={`/post/edit/${post._id}`} className='btn btn-primary me-3'>Edit</Link>
+                        <button className='btn btn-danger' onClick={(e) => deleteOneHandler(post._id)}>Delete</button>
+                    </p>
                 </div>
-                <Link to="/post" className='btn btn-secondary'>View All Posts</Link>
-                <p><button className='btn btn-danger' onClick={(e) => deleteOneHandler(post._id)}>Delete</button><Link to={`/post/edit/${post._id}`} className='btn btn-primary'>Edit</Link></p>
             </div>
         </>
     )

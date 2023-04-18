@@ -76,12 +76,13 @@ const CreateOne = () => {
     return (
         <>
             <Hero 
-                image={"/assets/hero.png"}
+                image={"/assets/general-bg.png"}
                 h1Header={"Create a new post"}
                 height={"30vh"}
+                bgPosition={"center 75%"}
             />
             <div className='container mt-4 mb-4'>
-                <div className='card w-50 mx-auto m-4 p-4 rounded'>
+                <div className='card w-50 mx-auto p-4 rounded'>
                     <form action="" onSubmit={onSubmitHandler}>
                         <div className="mb-3">
                             {errors.title ? <p className='text-danger'>{errors.title}</p> : ""}

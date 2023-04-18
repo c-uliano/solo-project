@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import Hero from './Hero';
-import heroImg from '../assets/hero.png';
 
 const DisplayAll = () => {
     // * state
@@ -31,9 +30,9 @@ const DisplayAll = () => {
     return (
         <>
             <Hero 
-                image={heroImg}
-                h1Header={"Latest Posts"}
-                content={"Keep up-to-date on what I'm up to these days."}
+                image={"/assets/hero.png"}
+                h1Header={"The Latest News"}
+                content={"Keep up-to-date on what I'm up to these days"}
                 link={"/post/create"}
                 btnName={"Create New Post"}
             />
@@ -42,11 +41,14 @@ const DisplayAll = () => {
                     {list.map((post) => {
                         let formattedDate = new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"});
                         return (
-                            <div key={post._id}>
-                                <h3><Link to={`/post/${post._id}`}>{post.title}</Link></h3>
-                                <p><i>{formattedDate}</i></p>
-                                <p><button className="btn btn-danger" onClick={(e) => deleteOneHandler(post._id)}>Delete</button><Link to={`/post/edit/${post._id}`} className='btn btn-primary'>Edit</Link></p>
-                                {/* <p>{post.content}</p> */}
+                            <div className="row align-items-center border-bottom mb-4" key={post._id}>
+                                <div className="col-md">
+                                    <h3><Link to={`/post/${post._id}`}>{post.title}</Link></h3>
+                                    <p><i>{formattedDate}</i></p>
+                                </div>
+                                <div className="col-md-auto">
+                                    <p><Link to={`/post/edit/${post._id}`} className='btn btn-primary me-3'>Edit</Link><button className="btn btn-danger" onClick={(e) => deleteOneHandler(post._id)}>Delete</button></p>
+                                </div>
                             </div>
                         )
                     })}

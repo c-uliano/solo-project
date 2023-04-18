@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import Hero from './Hero';
 
 const DisplayOne = () => {
     // * state
@@ -33,9 +34,12 @@ const DisplayOne = () => {
 
     return (
         <>
+            <Hero 
+                image={"/assets/hero.png"}
+                h1Header={`${post.title}`}
+            />
             <div className="container mt-4 mb-4">
                 <div>
-                    <h3>{post.title}</h3>
                     <p><i>{new Date(post.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric", timeZone: "UTC"})}</i></p>
                     <p>{post.content}</p>
                 </div>

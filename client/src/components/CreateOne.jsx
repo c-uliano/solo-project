@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import Hero from './Hero';
-import heroImg from '../assets/hero.png';
 
 const CreateOne = () => {
     // * states
@@ -77,7 +76,7 @@ const CreateOne = () => {
     return (
         <>
             <Hero 
-                image={heroImg}
+                image={"/assets/hero.png"}
                 h1Header={"Create a new post"}
             />
             <div className='container mt-4 mb-4'>

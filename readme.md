@@ -50,14 +50,15 @@ components:
 - ~~nav/header~~
 
 ### To Do
-- favicon
-- fix head description, still says react app
 - update hero images on all pages
-- create footer component
-- content to homepage and style it up
-- content to about and style it up
-- style up list page
 - style up detail page
+- ~~favicon~~
+- ~~create footer component~~
+- ~~content to homepage and style it up~~
+- ~~content to about and style it up~~
+    - basic, no hero I think. Profile pic with that css animation, about content on the right.
+- ~~style up list page~~
+- ~~fix head description, still says react app~~
 - ~~can delete the homepage.css stylesheets, don't need it since everything is now in the hero component~~
 - ~~set up component for hero image, use on every page~~
 - ~~update the navigate on CreateOne, so it'll go to post's detail page~~

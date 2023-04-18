@@ -10,6 +10,32 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #720E32;
 }
 
+.custom-link {
+  color: #043852;
+  text-decoration: none;
+  padding: 0.4rem;
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.custom-link:hover {
+  color: #720E32;
+}
+
+@media (min-width: 992px) {
+  .custom-link {
+    color: #720E32;
+    box-shadow: inset 0 0 0 0 #720E32;
+    padding: 0 0.25rem;
+    margin: 0 -0.25rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .custom-link:hover {
+    color: white;
+    box-shadow: inset 200px 0 0 0 #720E32;
+  }
+}
 /*!
  * Bootstrap  v5.3.0-alpha3 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -12034,4 +12060,81 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=App.css.map */
+}
+figure.photo:hover h2, figure.photo:hover .h2 {
+  transform: skew(-10deg) rotate(-10deg) translate(0%, -50%);
+}
+
+figure.photo:hover::before {
+  transform: rotate(110deg) translateY(-50%);
+}
+
+figure.photo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.photo * {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+figure.photo img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+
+figure.photo figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+figure.photo h2, figure.photo .h2 {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  display: inline-block;
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  padding: 12px 5px;
+  margin: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.photo::before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: #ffffff;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(110deg) translateY(-150%);
+}
+
+figure.photo a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+figure.photo h2, figure.photo .h2 {
+  background: #720E32;
+}
+
+figure.photo:hover img {
+  transform: scale(1.1);
+}/*# sourceMappingURL=portfolio.css.map */

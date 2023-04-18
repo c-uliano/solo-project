@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Hero from './Hero';
-import heroImg from '../assets/hero.png';
+// import heroImg from '../assets/hero.png';
 
 const EditOne = () => {
     // * states
@@ -84,10 +84,10 @@ const EditOne = () => {
 
     return (
         <>
-            <Hero 
+            {/* <Hero 
                 image={heroImg}
                 h1Header={"Edit post"}
-            />
+            /> */}
             <div className='container mt-4 mb-4'>
                 <div className='card w-50 mx-auto m-4 p-4 rounded'>
                     <form action="" onSubmit={onSubmitHandler}>

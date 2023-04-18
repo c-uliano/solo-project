@@ -1,0 +1,9 @@
+@import "../App";
+
+.footer-link.nav-link {
+    color: $secondary;
+}
+
+.footer-link .bi::before {
+    font-size: 1.8rem;
+}

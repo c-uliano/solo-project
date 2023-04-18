@@ -6,6 +6,7 @@ import DisplayOne from "./components/DisplayOne";
 import CreateOne from "./components/CreateOne";
 import EditOne from "./components/EditOne";
 import HeaderNav from "./components/HeaderNav";
+import Footer from './components/Footer';
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/post/edit/:id" element={<EditOne />} />
                 <Route />
             </Routes>
+            <Footer />
         </div>
     );
 }

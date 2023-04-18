@@ -51,6 +51,7 @@ components:
 
 ### To Do
 - update hero images on all pages
+    - so, find actual images
 - style up detail page
 - ~~favicon~~
 - ~~create footer component~~

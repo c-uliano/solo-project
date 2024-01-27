@@ -14,3 +14,5 @@
   - OR try out a component library like React Bootstrap or Material UI
 - Portfolio component is like a card component, expand upon that
   - Update the `portfolioList` to be an array of objects instead of an array of arrays
+- Install `sass` and then remove all the css.map and css files, won't need it
+  - Actually test this before making these changes - without installing `sass` will the styles work without compiling them?

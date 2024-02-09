@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Hero = (props) => {
+    // TODO: a lot of these can be put in a class, only need the props ones to be here
     const bgHero = {
         position: "relative",
         backgroundColor: "#000000",
@@ -13,6 +14,7 @@ const Hero = (props) => {
         justifyContent: "center"
     };
 
+    // TODO: a lot of these can be put in a class, only need the props ones to be here
     const bgHeroBefore = {
         content: "",
         position: 'absolute',
